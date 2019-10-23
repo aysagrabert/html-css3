@@ -1,22 +1,70 @@
-.App {
-  text-align: center;
+.img {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
-.App-logo {
-  height: 40vmin;
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
+  height: 100px;
+  background-color: purple;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 
-.App-link {
-  color: #09d3ac;
+.name {
+  margin-left: 25px;
+  color: #FEC403;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 27px;
 }
+
+#button-container {
+  display: flex;
+  align-content: center;
+  margin-right: 20px;
+}
+
+.button {
+  width: 80px;
+  text-align: center;
+  background-color: transparent;
+  border: 0px;
+  padding: 10px 0px;
+  color: white;
+  font-size: 15px;
+}
+
+.word-container {
+  height: 100%;
+  width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+
+.welcome {
+  color: white;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 45px;
+}
+.meet {
+  color: white;
+  font-size: 75px;
+  font-family: 'Patua One', cursive;
+}
+.tell {
+  height: 50px;
+  background-color: #FEC403;
+  color: white;
+  font-size: 30px;
+  font-family: 'Patua One', cursive;
+}
+
