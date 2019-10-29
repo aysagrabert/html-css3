@@ -1,19 +1,9 @@
-.img {
-  height: 100vh;
-  width: 100vw;
-  background-image: url('https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg');
-  background-size: cover;
-  background-position: center;
-}
-
-
 nav {
   height: 100px;
-  background-color: purple;
+  background-color: rgba(128, 128, 128, 0.658);
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .name {
@@ -25,23 +15,19 @@ nav {
 
 #button-container {
   display: flex;
+  width: 20vw;
   align-content: center;
-  margin-right: 20px;
+  margin-right: 20px; 
+  justify-content: space-between;
+  color: white;
 }
 
-.button {
-  width: 80px;
-  text-align: center;
-  background-color: transparent;
-  border: 0px;
-  padding: 10px 0px;
-  color: white;
-  font-size: 15px;
-}
+
+
+
 
 .word-container {
-  height: 100%;
-  width: 100%;
+  height: calc(100vh - 50px);  width: 100%;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
@@ -68,3 +54,101 @@ nav {
   font-family: 'Patua One', cursive;
 }
 
+#hamburger-icon {
+  margin-right: 20px;
+}
+
+.dropdown {
+  height: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 50px;
+  right: 0;
+  background-color: black;
+  color: black;
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  border-bottom-left-radius: 8px;
+}
+
+.hide-animation {
+  animation-name: hide;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.show-animation {
+  animation-name: show;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards
+}
+
+@keyframes hide {
+  0% {
+    height: 100px;
+  }
+  100% {
+    height: 0px;
+  }
+}
+
+@keyframes show {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  #button-container {
+    display: none;
+  }
+  nav, .dropdown {
+    background-color: rgba(128, 128, 128, 0.267);
+
+  }
+  body{
+    background-image: url('https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 990px) {
+  #button-container {
+    display: none;
+  }
+  nav, .dropdown{
+    background-color: rgba(128, 128, 128, 0.267);
+    color: white
+
+  }
+  body{
+    background-image: url('https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+}
+@media (min-width: 990px)  {
+  #hamburger-icon, .dropdown {
+    display: none;
+  }
+  nav, .dropdown {
+    background-color: rgba(128, 128, 128, 0.267);
+
+  }
+  body{
+    background-image: url('https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+}
